@@ -1,0 +1,120 @@
+@charset "ISO-2022-KR";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+body {
+  font-family: MontserratSemiBold;
+  font-weight : bold;
+  margin: 0;
+  background-image: url('./resources/images/Manchester_United.png');
+    background-repeat: no-repeat;
+}
+
+* {
+  box-sizing: border-box;
+  margin : 0 auto;
+}
+
+img {
+  vertical-align: top;
+}
+
+.menu,
+.footer{
+	position : static;
+	float : left;
+}
+
+.bg-red{
+	background: #c70101;
+	 font-family: MontserratSemiBold;
+  font-weight : bold;
+}
+
+.mont{
+	font-family: MontserratSemiBold;
+  font-weight : bold;
+}
+
+#mont{
+	font-family: MontserratSemiBold;
+  font-weight : bold;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+	font-family: MontserratSemiBold;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* Container for image text */
+.caption-container {
+  width : 40%;
+  text-align: center;
+  background-color: #222;
+  padding: 2px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  display:block;
+  width: 15%;
+  font-weight:bold;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
